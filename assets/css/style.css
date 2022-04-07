@@ -32,6 +32,7 @@ SOMMAIRE :
 
 html, body {
     height:100%;
+	width:100%;
 }
 
 body {
@@ -70,7 +71,7 @@ a:hover,a:active,a:focus{
     text-align: center;
     overflow: hidden;
     margin-bottom: 80px;
-	/* margin-top: 3%; */
+
 }
 .block_title:before,.block_title:after {
     content: "";
@@ -141,6 +142,8 @@ header{
 	z-index: 9999;
 }
 
+
+
 .logo {
 	height: 76px;
 	display: table;
@@ -205,6 +208,12 @@ header{
 /******************! COMPETENCES (4) *******************/
 
 
+.h2compet {
+	margin-top: 6%;
+}
+
+
+
 .competences {
 margin-top: 5%;
 background-size: cover;
@@ -217,7 +226,9 @@ margin-bottom: 3%;
 
 .haut {
 	display: flex;
-	justify-content: space-around
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width:100%
 }
 
 .haut img {
@@ -237,7 +248,9 @@ margin-bottom: 3%;
   .bas {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 5%
+		flex-wrap: wrap;
+	margin-top: 5%;
+	width:100%
 }
 
 .bas img {
@@ -403,6 +416,13 @@ margin-bottom: 3%;
     background-size: cover;
 }
 
+.yk {
+	text-shadow: -1px -1px 0 rgb(0, 204, 255), 1px -1px 0 rgb(0, 204, 255),
+	-1px 1px 0 rgb(0, 204, 255), 1px 1px 0 rgb(0, 204, 255),
+	1px 1px 10px #000000;
+	color : rgb(0, 0, 0)
+}
+
 .testimonila-block {
     text-align: center;
 }
@@ -410,7 +430,7 @@ margin-bottom: 3%;
 	border-radius: 50%;
 	border: 1px solid #000;
 	margin-bottom: 30px;
-	/* width: 250px; */
+	
 }
 .testimonila-block p {
     max-width: 60%;
@@ -429,7 +449,7 @@ margin-bottom: 3%;
 
 .cv {
 	text-decoration: none;
-	border: 3px solid yellow;
+	border: 3px solid rgb(0, 204, 255);
 	color: transparent;
 	padding: 3px 40px;
 	font-size: 28px;
@@ -444,7 +464,7 @@ margin-bottom: 3%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: yellow;
+	color: rgb(0, 204, 255);
 	background: rgb(34, 34, 34);
 	font-size: 28px;
 	top: 0;
@@ -468,7 +488,7 @@ margin-bottom: 3%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: yellow;
+	color: rgb(0, 204, 255);
 	background: rgb(34, 34, 34);
 	font-size: 28px;
 	top: 0;
@@ -514,7 +534,7 @@ margin-bottom: 3%;
     transition: all 0.3s ease;
 }
 .service-wrap:hover i {
-    color: #ffff00;
+    color: #000000;
 }
 .service-wrap p {
     padding: 0px 40px;
@@ -530,49 +550,59 @@ margin-bottom: 3%;
 /******************! CONTACT (8) *******************/
 
 
+
 #contact {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 
 #contact-area {
-    background: rgb(90, 94, 94);
-    width: 100%;
-    position: relative;
-    padding: 80px 0px 60px 0px;
+    background-image: url("https://www.lamelanz.com/wp-content/uploads/2021/01/contatti.jpg");
+	background-size: cover;
+    padding: 40px 0px 50px 0px; 
 }
 
 .icons {
 display: flex;
 justify-content: space-evenly;
+
 }
 
 .h4icons {
-	color: rgb(255, 255, 255) ;
-	font-size:25px;
+	text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px 1px 10px #000000;
+	color: #000000;
+	font-size: 30px;
 }
 
 
 #mail {
-	color: #fff;
+
+	text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px 1px 10px #000000;
+	color: #000000;
+	font-size:25px;
 }
 
 #mail:hover {
-	background-color: gold;
+	background-color: rgb(165, 142, 50);
   }
 
 
 
 .social {
 	display: flex;
-	justify-content: space-evenly;
-	margin-top: 3%;
+margin-left: 75%;
+	margin-top: 8%;
+}
+
+.social #gitou {
+	margin-right: 15%;
 }
 
 .social img {
-	width: 60px;
+	width: 75px;
 	cursor: pointer;
 }
+
 
 
 .social img {
@@ -668,7 +698,7 @@ footer {
 @media all and (max-width: 991px) {
 
 	header{
-		background: url(../images/bg-small.jpg) no-repeat;
+		background: url(../images/hehe.jpg) no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: 50% -50px;
@@ -712,33 +742,7 @@ footer {
 	    left: 46%;
 	}
 }
-@media all and (max-width: 380px) {
 
-
-	.logo-text {
-	    font-size: 2em;
-	}
-	.centered p {
-	    font-size: 1em;
-	}
-	.bigheadline {
-	    font-size: 4em;
-	}
-	.subheadline {
-	    font-family: 'Titillium Web',sans-serif;
-	    font-size: 1.5em;
-	    font-weight: 200;
-	    margin: 0;
-	}
-	.testimonila-block p {
-	    max-width: 90%;
-	}
-	.social-icons a {
-	    width: 30px;
-	    height: 30px;
-	}
-	
-}
 
 @media all and (max-width: 480px) {
 
@@ -747,3 +751,125 @@ footer {
 	    left: 44%;
 	}
 }
+
+
+@media  screen and (min-width: 426px) and (max-width: 1024px) { 
+
+	.social {
+	margin-left: 8%;
+	margin-top: 25%;
+	}
+	
+	.h4icons {
+	
+	font-size: 20px;
+	} 
+	
+	.icons {
+	
+	flex-direction: column;
+	}
+	
+	#mail {
+	
+	font-size:20px;
+	}
+	
+	
+	.bas {
+		width:90%
+	}
+	
+	.haut {
+	
+		width:90%
+	}
+	
+	
+	.cv {
+	
+		padding: 3px 10px;
+		font-size: 10px;
+	margin-top: 10%;
+	
+	} 
+	 }
+
+	 @media all and (max-width: 380px) {
+
+
+		.logo-text {
+			font-size: 2em;
+		}
+		.centered p {
+			font-size: 1em;
+		}
+		.bigheadline {
+			font-size: 4em;
+		}
+		.subheadline {
+			font-family: 'Titillium Web',sans-serif;
+			font-size: 1.5em;
+			font-weight: 200;
+			margin: 0;
+		}
+		.testimonila-block p {
+			max-width: 90%;
+		}
+		.social-icons a {
+			width: 30px;
+			height: 30px;
+		}
+		
+	}
+
+
+ @media  screen and (min-width: 320px) and (max-width: 425px) { 
+
+
+.social {
+margin-left: 8%;
+margin-top: 25%;
+}
+
+.h4icons {
+
+font-size: 20px;
+} 
+
+.icons {
+
+flex-direction: column;
+}
+
+#mail {
+
+font-size:20px;
+}
+
+
+.bas {
+	width:90%
+}
+
+.haut {
+
+	width:90%
+}
+
+
+.cv {
+
+	padding: 3px 10px;
+	font-size: 10px;
+margin-top: 10%;
+
+
+
+} 
+
+
+ }
+
+ 
+

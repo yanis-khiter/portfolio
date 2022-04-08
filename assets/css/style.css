@@ -1,34 +1,23 @@
-/*
-Theme Name: Dark Joe
-Theme URI: http://themewagon.com/demo/DarkJoe/
-Author: ThemeWagon
-Author URI: http://themewagon.com/
-Description: Slick One page portfolio site for Freelancers powered by Bootstrap 3.
-Version: 1.14.11
-License: GNU General Public License v3
-License URI: http://www.gnu.org/licenses/gpl-3.0.txt
-Tags: dark, white, one page, parallax, responsive-layout, full-width-template
-Text Domain: darkjoe
-*/
 
-/******************
+/***********
 
 SOMMAIRE :
-* 1 - Yanis Khiter
-* 2 - Header
-* 3 - Navigation
-* 4 - Compétences
-* 5 - Projets
-* 6 - Profil
-* 7 - Qualités
-* 8 - Contact
-* 9 - Footer
-* 10 Responsive Fixes
+
+1 - Accueil
+2 - Header
+3 - Navigation
+4 - Compétences
+5 - Projets
+6 - Profil
+7 - Qualités
+8 - Contact
+9 - Footer
+10 - Responsive 
 
 
 
 
-/******************! Yanis Khiter (1) *******************/
+/******************! Accueil (1) *******************/
 
 html, body {
     height:100%;
@@ -420,7 +409,8 @@ margin-bottom: 3%;
 	text-shadow: -1px -1px 0 rgb(0, 204, 255), 1px -1px 0 rgb(0, 204, 255),
 	-1px 1px 0 rgb(0, 204, 255), 1px 1px 0 rgb(0, 204, 255),
 	1px 1px 10px #000000;
-	color : rgb(0, 0, 0)
+	color : rgb(0, 0, 0);
+	
 }
 
 .testimonila-block {
@@ -444,7 +434,7 @@ margin-bottom: 3%;
 }
 
 .maincv {
-	margin-top: 3%;
+	margin-top: 5%;
 }
 
 .cv {
@@ -583,7 +573,7 @@ justify-content: space-evenly;
 }
 
 #mail:hover {
-	background-color: rgb(165, 142, 50);
+	background-color: rgb(84, 0, 101);
   }
 
 
@@ -621,26 +611,86 @@ margin-left: 75%;
 /******************! FOOTER (9) *******************/
 
 
+* {
+	margin:0px;
+	padding:0px;
+	}
+	
+	html {
+	font-family: "Zen Dots Regular";
+	}
+	
+	@font-face {
+	font-family: "Zen Dots Regular";
+	src: url("../zen-dots/ZenDots-Regular.ttf");
+	}
+	
+	
+	/***** MOYEN DE PAIMENTS BLEU *****/
+	
+	
+	nav {
+	background-color: rgb(12, 12, 114);
+	height: 65px;
+	}
+	
+	.paiments {
+		display: flex;
+		justify-content: space-around;
+		margin-left: 10%;
+		padding: 10px;
+	}
+	
+	.pnav{
+	color: white;
+	margin-top: 1%;
+	}
+	
+	.imageicon {
+	width: 40px;
+	margin-right: 9%;
+	}
+	
+	
+	
+	/***** FOOTER *****/
+	
+	
+	footer {
+	background-color: #2d2b2b;
+	height:120px;
 
-footer {
-    width: 100%;
-    background: #000;
-    color: #ffff00;
-}
-.copyright {
-    margin: 0;
-    padding: 20px 0px;
-    text-align: left;
-}
-.designed {
-    margin: 0;
-    padding: 20px 0px;
-    text-align: right;
-}
-.designed a:hover {
-    color: #ffff00;
-}
+	}
 
+
+
+
+	.p-footer {
+	color: white;
+	font-size: 22px;
+	}
+
+	.main{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3%;
+	}
+	
+	.mention {
+	display: flex;
+	}
+	
+	.flag {
+	display: flex;
+	}
+
+	
+	.copy{
+	display: flex;
+	} 
+	
+	
+	
 
 /******************! RESPONSIVE (10) *******************/
 
@@ -746,54 +796,54 @@ footer {
 
 @media all and (max-width: 480px) {
 
-	.scrollDown {
-	    top: 70%;
-	    left: 44%;
+		.scrollDown {
+		top: 70%;
+		left: 44%;
+		}
 	}
-}
 
 
 @media  screen and (min-width: 426px) and (max-width: 1024px) { 
 
-	.social {
-	margin-left: 8%;
-	margin-top: 25%;
-	}
-	
-	.h4icons {
-	
-	font-size: 20px;
-	} 
-	
-	.icons {
-	
-	flex-direction: column;
-	}
-	
-	#mail {
-	
-	font-size:20px;
-	}
-	
-	
-	.bas {
+		.social {
+		margin-left: 8%;
+		margin-top: 25%;
+		}
+		
+		.h4icons {
+		
+		font-size: 20px;
+		} 
+		
+		.icons {
+		
+		flex-direction: column;
+		}
+		
+		#mail {
+		
+		font-size:20px;
+		}
+		
+		
+		.bas {
 		width:90%
-	}
-	
-	.haut {
-	
+		}
+		
+		.haut {
+		
 		width:90%
-	}
-	
-	
-	.cv {
-	
+		}
+		
+		
+		.cv {
+		
 		padding: 3px 10px;
 		font-size: 10px;
-	margin-top: 10%;
-	
-	} 
-	 }
+		margin-top: 10%;
+		
+		} 
+		}
 
 	 @media all and (max-width: 380px) {
 
@@ -827,49 +877,46 @@ footer {
  @media  screen and (min-width: 320px) and (max-width: 425px) { 
 
 
-.social {
-margin-left: 8%;
-margin-top: 25%;
-}
+		.social {
+		margin-left: 8%;
+		margin-top: 25%;
+		}
 
-.h4icons {
+		.h4icons {
 
-font-size: 20px;
-} 
+		font-size: 20px;
+		} 
 
-.icons {
+		.icons {
 
-flex-direction: column;
-}
+		flex-direction: column;
+		}
 
-#mail {
+		#mail {
 
-font-size:20px;
-}
-
-
-.bas {
-	width:90%
-}
-
-.haut {
-
-	width:90%
-}
+		font-size:20px;
+		}
 
 
-.cv {
+		.bas {
+		width:90%
+		}
 
-	padding: 3px 10px;
-	font-size: 10px;
-margin-top: 10%;
+		.haut {
+
+		width:90%
+		}
 
 
+		.cv {
 
-} 
+		padding: 3px 10px;
+		font-size: 10px;
+		margin-top: 10%;
 
 
- }
+		} 
+	}
 
  
 
